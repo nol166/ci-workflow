@@ -13,6 +13,9 @@ sinon.useFakeTimers(new Date(2020, 11, 11, 11));
 // log out the current OS that the test is running on
 console.log(`OS: ${process.platform}`);
 
+// log out the current version of node that the test is running on
+console.log(`Node: ${process.version}`);
+
 describe("Formatting", () => {
   describe("Text", () => {
     it("should convert email addresses to links", () => {
